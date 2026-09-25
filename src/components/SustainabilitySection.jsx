@@ -4,7 +4,7 @@ import {
     Droplets,
     Sprout,
 } from "lucide-react";
-import CROPBG from "../assets/image/crop_bg.svg"
+import CROPBG from "../assets/image/Crop_bg.svg"
 
 const sustainabilityPoints = [
     {

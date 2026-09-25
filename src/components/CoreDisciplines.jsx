@@ -9,8 +9,8 @@ import {
     ArrowUpRight,
 } from "lucide-react";
 
-import CROP from "../assets/image/crop_bg.svg";
-import CROP2 from "../assets/image/crop_bg.svg";
+import CROP from "../assets/image/Crop_bg.svg";
+import CROP2 from "../assets/image/Crop_bg.svg";
 
 
 const disciplines = [
