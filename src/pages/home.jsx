@@ -1,4 +1,4 @@
-import Header from "../components/Header";
+import Header from "../components/header";
 import HeroSlider from "../components/HeroSlider";
 import WhoWeAre from "../components/WhoWeAre";
 import SolutionMarquee from "../components/SolutionMarquee";
@@ -8,7 +8,6 @@ import CropFocus from "../components/CropFocus";
 import SustainabilitySection from "../components/SustainabilitySection";
 import TeamSection from "../components/TeamSection";
 import FinalCTA from "../components/FinalCTA";
-import Footer from "../components/Footer";
 
 const Homepage = () => {
     return (

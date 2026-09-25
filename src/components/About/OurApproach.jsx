@@ -6,7 +6,7 @@ import {
     ArrowUpRight,
 } from "lucide-react";
 
-import CROP from "../../assets/image/crop_bg.svg";
+import CROP from "../src/assets/image/Crop_bg.svg";
 
 const approachSteps = [
     {
