@@ -16,6 +16,9 @@ const Header = () => {
 
   const location = useLocation();
 
+  // =====================================================
+  // SCROLL EFFECT
+  // =====================================================
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 40);
@@ -29,12 +32,16 @@ const Header = () => {
     };
   }, []);
 
-  // Close menu when route changes
+  // =====================================================
+  // CLOSE MOBILE MENU WHEN ROUTE CHANGES
+  // =====================================================
   useEffect(() => {
     setMenuOpen(false);
   }, [location.pathname]);
 
-  // Prevent body scroll when sidebar is open
+  // =====================================================
+  // PREVENT BODY SCROLL WHEN SIDEBAR IS OPEN
+  // =====================================================
   useEffect(() => {
     if (menuOpen) {
       document.body.style.overflow = "hidden";
@@ -93,11 +100,20 @@ const Header = () => {
             to="/"
             className="flex shrink-0 items-center gap-2.5"
           >
-            <div className="flex items-center justify-center">
+            <div
+              className="
+                flex
+                h-full
+                w-full
+                items-center
+                justify-center
+                rounded-[9px]
+              "
+            >
               <img
                 src={Logo}
                 alt="CropSure Logo"
-                className="h-12 w-12 object-contain sm:h-14 sm:w-14"
+                className="h-50 w-50 object-contain"
               />
             </div>
           </Link>
@@ -117,7 +133,8 @@ const Header = () => {
             "
           >
             {navItems.map((item) => {
-              const isActive = location.pathname === item.href;
+              const isActive =
+                location.pathname === item.href;
 
               return (
                 <Link
@@ -139,6 +156,7 @@ const Header = () => {
                 >
                   <span>{item.name}</span>
 
+                  {/* Center-out underline */}
                   <span
                     className={`
                       absolute
@@ -151,7 +169,11 @@ const Header = () => {
                       duration-300
                       ease-out
 
-                      ${isActive ? "w-full" : "w-0 group-hover:w-full"}
+                      ${
+                        isActive
+                          ? "w-full"
+                          : "w-0 group-hover:w-full"
+                      }
                     `}
                   />
                 </Link>
@@ -160,7 +182,7 @@ const Header = () => {
           </nav>
 
           {/* =====================================================
-              GET IN TOUCH
+              GET IN TOUCH - DESKTOP
           ===================================================== */}
           <div className="ml-auto hidden items-center gap-3 md:flex">
             <Link
@@ -203,7 +225,8 @@ const Header = () => {
           ===================================================== */}
           <button
             type="button"
-            aria-label="Toggle menu"
+            aria-label="Open menu"
+            aria-expanded={menuOpen}
             onClick={() => setMenuOpen(true)}
             className="
               ml-auto
@@ -224,7 +247,10 @@ const Header = () => {
               md:hidden
             "
           >
-            <Menu size={21} strokeWidth={1.8} />
+            <Menu
+              size={21}
+              strokeWidth={1.8}
+            />
           </button>
         </div>
       </header>
@@ -237,7 +263,7 @@ const Header = () => {
           fixed
           inset-0
           z-[60]
-          bg-black/40
+          bg-black/45
           backdrop-blur-[2px]
           transition-opacity
           duration-300
@@ -276,7 +302,11 @@ const Header = () => {
           ease-[cubic-bezier(0.22,1,0.36,1)]
           md:hidden
 
-          ${menuOpen ? "translate-x-0" : "translate-x-full"}
+          ${
+            menuOpen
+              ? "translate-x-0"
+              : "translate-x-full"
+          }
         `}
       >
         {/* =====================================================
@@ -294,6 +324,7 @@ const Header = () => {
             px-6
           "
         >
+          {/* Sidebar Logo */}
           <Link
             to="/"
             onClick={() => setMenuOpen(false)}
@@ -302,10 +333,11 @@ const Header = () => {
             <img
               src={Logo}
               alt="CropSure Logo"
-              className="h-12 w-12 object-contain"
+              className="h-50 w-50 object-contain"
             />
           </Link>
 
+          {/* Close Button */}
           <button
             type="button"
             aria-label="Close menu"
@@ -314,6 +346,7 @@ const Header = () => {
               flex
               h-10
               w-10
+              shrink-0
               items-center
               justify-center
               rounded-full
@@ -326,7 +359,10 @@ const Header = () => {
               hover:bg-white/10
             "
           >
-            <X size={21} strokeWidth={1.8} />
+            <X
+              size={21}
+              strokeWidth={1.8}
+            />
           </button>
         </div>
 
@@ -350,7 +386,8 @@ const Header = () => {
 
           <div className="space-y-2">
             {navItems.map((item, index) => {
-              const isActive = location.pathname === item.href;
+              const isActive =
+                location.pathname === item.href;
 
               return (
                 <Link
@@ -370,16 +407,25 @@ const Header = () => {
 
                     ${
                       isActive
-                        ? "bg-[#E9EF9B] text-[#172019]"
-                        : "text-white/75 hover:bg-white/5 hover:text-white"
+                        ? `
+                          bg-[#E9EF9B]
+                          text-[#172019]
+                        `
+                        : `
+                          text-white/75
+                          hover:bg-white/5
+                          hover:text-white
+                        `
                     }
                   `}
                 >
                   <div className="flex items-center gap-4">
+                    {/* Number */}
                     <span
                       className={`
                         text-[10px]
                         font-medium
+
                         ${
                           isActive
                             ? "text-[#172019]/50"
@@ -387,9 +433,10 @@ const Header = () => {
                         }
                       `}
                     >
-                      0{index + 1}
+                      {String(index + 1).padStart(2, "0")}
                     </span>
 
+                    {/* Name */}
                     <span className="text-[15px] font-medium">
                       {item.name}
                     </span>
@@ -414,7 +461,15 @@ const Header = () => {
         {/* =====================================================
             SIDEBAR FOOTER
         ===================================================== */}
-        <div className="border-t border-white/10 p-5">
+        <div
+          className="
+            shrink-0
+            border-t
+            border-white/10
+            p-5
+          "
+        >
+          {/* Get In Touch */}
           <Link
             to="/contact"
             onClick={() => setMenuOpen(false)}
@@ -451,7 +506,15 @@ const Header = () => {
             />
           </Link>
 
-          <p className="mt-5 text-center text-[10px] text-white/25">
+          {/* Footer Text */}
+          <p
+            className="
+              mt-5
+              text-center
+              text-[10px]
+              text-white/25
+            "
+          >
             CropSure
           </p>
         </div>
