@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Homepage from "../src/pages/home";
-import Aboutpage from "../src/pages/about";
+import Aboutpage from "../src/pages/About";
 import MainLayout from "../src/layouts/MainLayout";
 import Products from "../src/pages/Products";
 import Contact from "../src/pages/contact"
