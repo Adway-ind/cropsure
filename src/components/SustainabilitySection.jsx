@@ -124,7 +124,7 @@ const SustainabilitySection = () => {
                     {/* TITLE */}
                     <h2
                         className="
-                            text-[clamp(3rem,5.5vw,5.8rem)]
+                            text-[clamp(2.3rem,5.5vw,5.8rem)]
                             font-normal
                             leading-[0.9]
                             tracking-[-0.065em]

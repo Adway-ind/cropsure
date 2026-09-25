@@ -140,7 +140,7 @@ const FinalTransition = () => {
                     ================================================= */}
                     <h2
                         className="
-                            text-[clamp(3.5rem,7.5vw,8rem)]
+                            text-[clamp(2.2rem,7.5vw,8rem)]
                             font-normal
                             leading-[0.82]
                             tracking-[-0.075em]
@@ -265,7 +265,7 @@ const FinalTransition = () => {
                     <span
                         className="
                             text-[clamp(5rem,4vw,10rem)]
-                            font-normal
+                            font-medium
                             leading-[0.78]
                             tracking-[-0.065em]
                             text-white/[0.28]
@@ -277,7 +277,7 @@ const FinalTransition = () => {
                     <span
                         className="
                             text-[clamp(5rem,4vw,10rem)]
-                            font-normal
+                            font-medium
                             leading-[0.78]
                             tracking-[-0.065em]
                             text-white/[0.28]
@@ -289,7 +289,7 @@ const FinalTransition = () => {
                     <span
                         className="
                             text-[clamp(5rem,4vw,10rem)]
-                            font-normal
+                            font-medium
                             leading-[0.78]
                             tracking-[-0.065em]
                             text-white/[0.28]
@@ -301,7 +301,7 @@ const FinalTransition = () => {
                     <span
                         className="
                             text-[clamp(5rem,4vw,10rem)]
-                            font-normal
+                            font-medium
                             leading-[0.78]
                             tracking-[-0.065em]
                             text-white/[0.28]
@@ -313,7 +313,7 @@ const FinalTransition = () => {
                     <span
                         className="
                             text-[clamp(5rem,4vw,10rem)]
-                            font-normal
+                            font-medium
                             leading-[0.78]
                             tracking-[-0.065em]
                             text-white/[0.28]
@@ -345,7 +345,7 @@ const FinalTransition = () => {
                     <span
                         className="
                             text-[clamp(5rem,2vw,10rem)]
-                            font-normal
+                            font-medium
                             leading-[0.78]
                             tracking-[-0.065em]
                             text-white/[0.28]
@@ -357,7 +357,7 @@ const FinalTransition = () => {
                     <span
                         className="
                             text-[clamp(5rem,4vw,10rem)]
-                            font-normal
+                            font-medium
                             leading-[0.78]
                             tracking-[-0.065em]
                             text-white/[0.28]
@@ -369,7 +369,7 @@ const FinalTransition = () => {
                     <span
                         className="
                             text-[clamp(5rem,4vw,10rem)]
-                            font-normal
+                            font-medium
                             leading-[0.78]
                             tracking-[-0.065em]
                             text-white/[0.28]
@@ -381,7 +381,7 @@ const FinalTransition = () => {
                     <span
                         className="
                             text-[clamp(5rem,4vw,10rem)]
-                            font-normal
+                            font-medium
                             leading-[0.78]
                             tracking-[-0.065em]
                             text-white/[0.28]
@@ -393,7 +393,7 @@ const FinalTransition = () => {
                     <span
                         className="
                             text-[clamp(5rem,4vw,10rem)]
-                            font-normal
+                            font-medium
                             leading-[0.78]
                             tracking-[-0.065em]
                             text-white/[0.28]

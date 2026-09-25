@@ -24,7 +24,7 @@ const solutions = [
     {
         type: "image",
         image:
-            "https://images.unsplash.com/photo-1592982537447-6f7a2c5f5f5c?auto=format&fit=crop&w=500&q=85",
+            "https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         alt: "Agricultural field",
     },
     {

@@ -20,3 +20,81 @@ button,
 a {
   -webkit-tap-highlight-color: transparent;
 }
+
+/* =========================================
+   CUSTOM CROPSURE CURSOR
+========================================= */
+
+@media (min-width: 768px) {
+
+  html,
+  body {
+    cursor: none !important;
+  }
+
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    cursor: none !important;
+  }
+
+
+  /* =========================
+       NORMAL CURSOR
+    ========================= */
+
+  .cursor-dark {
+    border-color: #e9ef9b !important;
+  }
+
+  .cursor-dot-dark {
+    background: #e9ef9b !important;
+    box-shadow: 0 0 10px rgba(233, 239, 155, 0.7);
+  }
+
+  /* =========================
+       LINK HOVER
+    ========================= */
+
+  .cursor-active {
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 6px !important;
+    background: rgba(23, 77, 50, 0.08);
+    border-color: #174d32 !important;
+  }
+
+  .cursor-dot-active {
+    width: 8px !important;
+    height: 8px !important;
+  }
+
+  /* Hover while on dark section */
+  .cursor-dark.cursor-active {
+    border-color: #e9ef9b !important;
+    background: rgba(233, 239, 155, 0.10);
+  }
+
+  .cursor-dot-dark.cursor-dot-active {
+    background: #e9ef9b !important;
+  }
+
+  /* FORCE NORMAL MOUSE POINTER */
+  html,
+  body,
+  #root,
+  * {
+    cursor: auto !important;
+  }
+
+  a,
+  button,
+  input,
+  textarea,
+  select,
+  [role="button"] {
+    cursor: pointer !important;
+  }
+}

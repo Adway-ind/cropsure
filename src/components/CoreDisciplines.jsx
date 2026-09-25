@@ -61,7 +61,7 @@ const disciplines = [
             "Customized drought-defense and salinity buffering formulas for demanding climates.",
         icon: Wheat,
         image:
-            "https://images.unsplash.com/photo-1523742811118-6a6a0e2d6f8b?auto=format&fit=crop&w=1600&q=90",
+            "https://images.unsplash.com/photo-1717702576954-c07131c54169?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         tag: "SPECIALTY AGRICULTURE",
     },
 ];
@@ -741,30 +741,7 @@ const CoreDisciplines = () => {
                                     RESEARCH → DEVELOPMENT → FIELD
                                 </span>
 
-                                <a
-                                    href="/solutions"
-                                    className="
-                                        group
-                                        flex
-                                        items-center
-                                        gap-2
-                                        text-[10px]
-                                        font-semibold
-                                        text-[#E9EF9B]
-                                    "
-                                >
-                                    Explore disciplines
-
-                                    <ArrowUpRight
-                                        size={13}
-                                        className="
-                                            transition-transform
-                                            duration-300
-                                            group-hover:-translate-y-0.5
-                                            group-hover:translate-x-0.5
-                                        "
-                                    />
-                                </a>
+                                
 
                             </div>
 
